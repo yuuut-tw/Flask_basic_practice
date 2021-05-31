@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/hello_post" method="POST">
+        <div>
+            What's your name?
+        </div>    
+        <div>
+            <input name="username">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    {% if method == 'POST' %}
+        <h3>Hello {{name}} !</h3>
+    {% endif %}
+</body>
+</html>
