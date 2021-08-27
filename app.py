@@ -12,7 +12,7 @@ app.register_blueprint(test_controller, url_prefix='/testNamespace')
 # 制定接口，透過此接口得到服務
 @app.route('/')
 def index():
-    return "Hello Flask!!"
+    return "Hello from my Flask!!"
 
 @app.route('/hello/Ben')
 def greettoBen():
