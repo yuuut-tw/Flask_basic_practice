@@ -4,7 +4,7 @@ import series as s
 from model import model
 from test_controller import test_controller
 
-# 主程式的名稱 = app
+# 主程式的名稱 => app
 app = Flask(__name__, static_url_path='/static_yu', static_folder='./static_yu')
 app.register_blueprint(test_controller, url_prefix='/testNamespace')
 
